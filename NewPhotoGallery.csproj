@@ -25,6 +25,8 @@
     <SccProvider>SAK</SccProvider>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
     <RestorePackages>true</RestorePackages>
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -374,6 +376,8 @@
     <Content Include="Images\icon-tags.png" />
     <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\agscaledemo1.pubxml" />
+    <None Include="Properties\PublishProfiles\GoodPhotos - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\photosdemo - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.8.2-vsdoc.js" />
     <Content Include="Scripts\jquery-1.8.2.js" />
     <Content Include="Scripts\jquery-1.8.2.min.js" />
@@ -447,11 +451,11 @@
     <Content Include="_SiteLayout.Mobile.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\repos\scaledemo\CQRS\CQRS.csproj">
+    <ProjectReference Include="..\..\..\Users\adamg\Desktop\bootcamp\code\CQRS\CQRS.csproj">
       <Project>{72e43b9e-00f8-44d1-9cfb-811de5b15ebe}</Project>
       <Name>CQRS</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\repos\scaledemo\GalleryHelpers\GalleryHelpers.csproj">
+    <ProjectReference Include="..\..\..\Users\adamg\Desktop\bootcamp\code\GalleryHelper\GalleryHelpers.csproj">
       <Project>{e6e19b19-1d44-4dfd-b9ab-be95889f7cef}</Project>
       <Name>GalleryHelpers</Name>
     </ProjectReference>

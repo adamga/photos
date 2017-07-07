@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.26606.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NewPhotoGallery", "NewPhotoGallery.csproj", "{EBD71A78-F0C1-41DD-BD13-7D60D7435352}"
 EndProject
@@ -11,6 +11,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{1BD7AA
 		.nuget\NuGet.exe = .nuget\NuGet.exe
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CQRS", "..\..\..\Users\adamg\Desktop\bootcamp\code\CQRS\CQRS.csproj", "{72E43B9E-00F8-44D1-9CFB-811DE5B15EBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GalleryHelpers", "..\..\..\Users\adamg\Desktop\bootcamp\code\GalleryHelper\GalleryHelpers.csproj", "{E6E19B19-1D44-4DFD-B9AB-BE95889F7CEF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -22,6 +26,14 @@ Global
 		{EBD71A78-F0C1-41DD-BD13-7D60D7435352}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EBD71A78-F0C1-41DD-BD13-7D60D7435352}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EBD71A78-F0C1-41DD-BD13-7D60D7435352}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72E43B9E-00F8-44D1-9CFB-811DE5B15EBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72E43B9E-00F8-44D1-9CFB-811DE5B15EBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72E43B9E-00F8-44D1-9CFB-811DE5B15EBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72E43B9E-00F8-44D1-9CFB-811DE5B15EBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E19B19-1D44-4DFD-B9AB-BE95889F7CEF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E19B19-1D44-4DFD-B9AB-BE95889F7CEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E19B19-1D44-4DFD-B9AB-BE95889F7CEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E19B19-1D44-4DFD-B9AB-BE95889F7CEF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

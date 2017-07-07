@@ -44,7 +44,7 @@
 
 
         // Create the user profile
-        var db = Database.Open(dbRead);
+        var db = WebMatrix.Data.Database.Open(dbRead);
         // Check if user already exists
         var userExists = db.QuerySingle("SELECT Email FROM UserProfiles WHERE LOWER(Email) = LOWER(@0)", email);
 
@@ -57,19 +57,19 @@
             operationMessage.galleryObject = userObject.ToString();
             operationMessage.serializedobject = Json.Encode(userObject);
 
-           var userInserted = aSH.enqueue(queue, operationMessage);
+            var userInserted = aSH.enqueue(queue, operationMessage);
 
             do
             {
-                
+
                 if (userInserted)
                 {
                     // Create and associate a new entry in the membership database.
                     // If successful, continue processing the request
                     try
                     {
-                        WebSecurity.CreateAccount(email, password);
-                        WebSecurity.Login(email, password);
+                        WebMatrix.WebData.WebSecurity.CreateAccount(email, password);
+                        WebMatrix.WebData.WebSecurity.Login(email, password);
                         Response.Redirect("~/");
                     }
                     catch (System.Web.Security.MembershipCreateUserException e)

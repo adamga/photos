@@ -45,7 +45,8 @@
                 var uploadPicture = new GalleryHelpers.Photos();
 
                 uploadPicture.galleryId = galleryId;
-                uploadPicture.userId =  WebSecurity.CurrentUserId;
+                uploadPicture.userId = WebMatrix.WebData.WebSecurity.CurrentUserId;
+                //uploadPicture.userId =  WebSecurity.CurrentUserId;
 
                 uploadPicture.fileTitle = Path.GetFileNameWithoutExtension(file.FileName).Trim();
                 if (uploadPicture.fileTitle.IsEmpty())
